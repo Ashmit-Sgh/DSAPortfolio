@@ -13,7 +13,7 @@
     --light-text-color: #444;
     --black-color: #000;
     --white-color: #fff;
-    --hero-color: black;
+    --hero-color: #3f3d56;
 }
 .work-hero-card{
     display: block;
@@ -446,19 +446,13 @@ li span a:hover {
 }
 
 
-.legal {
-    position: absolute;
-    bottom: 25px;
-    right: 25px;
-}
-
 
 .hero-tag {
     margin-top: 20vh;
     text-align: left;
     font-size: 4.5em;
     font-weight: bold;
-    color: var(--hero-color);
+    color: #3f3d56;
     font-family: 'CircularStd', sans-serif;
 }
 
@@ -489,31 +483,6 @@ li span a:hover {
 label {
     display: inline-block;
     margin-bottom: 0.5rem;
-}
-
-.form-control {
-    height: calc(2.25rem + 2px);
-    padding: .5rem .75rem;
-    width: 90%;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #495057;
-    background: none;
-    border: none;
-    border-bottom: 2px solid #444;
-    border-radius: 0rem;
-    transition: all .5s ease-in-out;
-    outline: none;
-}
-
-.form-control:focus {
-    outline: none;
-    border-bottom: 2px solid blue;
-    box-shadow: none;
-}
-
-.form-control:hover {
-    background: whitesmoke;
 }
 
 /* input:focus, textarea:focus, select:focus{
@@ -878,4 +847,105 @@ li span:hover:after {
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 
+}
+.hero-details h2 {
+    font-size: 48px; /* Adjust size as needed */
+    margin-top: 20px; /* Space above the heading */
+    margin-bottom: 10px; /* Space below the heading */
+    color: #6c63ff; /* Purple color (you can change this to any shade of purple you prefer) */
+}
+
+.hero-des {
+    margin-bottom: 30px; /* Add some space below the paragraph */
+}
+/* Styles for the certificate images */
+.certificate-img {
+    width: 100%; /* Keep the image width as full */
+    height: 300px; /* Set a fixed height for uniformity */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    border: 2px solid white; /* White border for a clean look */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+    margin-bottom: 20px; /* Space below each image */
+}
+
+/* Adjust the last certificate in each row to not have a right margin */
+.col-md-6:last-child .certificate-img {
+    margin-right: 0; /* Remove right margin for the last item */
+}
+
+/* Adjust the column style */
+.col-md-6 {
+    padding: 0; /* Remove padding from the column */
+}
+
+/* Hover effect for images */
+.certificate-img:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+}
+
+/* Adjust the container to be centered */
+.container {
+    max-width: 800px; /* Limit the width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Add padding around the container */
+}
+
+/* Adjust the row to align images more to the left */
+.row {
+    justify-content: flex-start; /* Align items to the left */
+}
+
+/* Custom styles to align sections */
+.container {
+    padding-left: 15px; /* Add padding to the left */
+    padding-right: 15px; /* Add padding to the right */
+}
+
+/* Adjust the headings to match the size of the main heading */
+.container h2 {
+    font-size: 2em; /* Set font size to match the main heading */
+    text-align: left; /* Align text to the left */
+    margin-left: 15px; /* Add left margin for alignment */
+}
+
+.container p {
+    text-align: left; /* Align paragraph text to the left */
+    margin-left: 15px; /* Add left margin for alignment */
+}
+
+.hackerrank-heading {
+    color: #6c63ff; /* Change this to any color you want */
+}
+
+.certificate-heading {
+    color: #6c63ff; /* Change this to any color you want */
+}
+
+/* New styles to shift images slightly to the left */
+.shift-left {
+    margin-left: -15px; /* Adjust this value to move left */
+}
+.move-left {
+    font-size: 4rem;       /* Set the font size */
+    margin-top: 10px;      /* Top margin */
+    margin-left: -40px;    /* Left margin to move it left */
+}
+@keyframes backgroundAnimation {
+    0% {
+        background-color: rgba(179, 179, 255, 0.7); /* Lighter shade */
+    }
+    50% {
+        background-color: rgba(240, 240, 240, 0.7); /* Light gray */
+    }
+    100% {
+        background-color: rgba(179, 179, 255, 0.7); /* Lighter shade */
+    }
+}
+
+body {
+    background: linear-gradient(135deg, rgba(108, 99, 255, 0.5), rgba(240, 240, 240, 0.5)); /* Gradient background */
+    animation: backgroundAnimation 10s ease infinite; /* Combine with animation */
+    background-blend-mode: overlay; /* Blend the gradient with the animated background */
 }
